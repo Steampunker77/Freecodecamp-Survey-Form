@@ -1,0 +1,99 @@
+1 body {
+2  font-family: "Tahoma"
+3  color: white;
+4  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=pexels-felix-mittermeier-956999.jpg&fm=jpg");
+5  background-repeat: no-repeat;
+6  background-size: cover;
+7  background-position: center;
+8  width: 100vw;
+9  color: white;
+10  margin: 0;
+11 }
+12
+13 h1, p {
+14  margin: 10px auto 10px auto;
+15  display: block;
+16
+17 }
+18
+19 #title {
+20  text-align: center;
+21  margin-top: 30px;
+22  margin-bottom: 0px;
+23  font-weight: 400;
+24 }
+25
+26 #description{
+27  margin-bottom: 0px;
+28  text-align: center;
+29  font-style: tahoma;
+30 }
+31
+32 #survey-form {
+33  background-color: rgba(27,27,50, 0.8);
+34  width: 80%;
+35  margin: 0 auto;
+36  border-radius: 10px;
+37 }
+38
+39 .form-div {
+40  display: flex;
+41  flex-direction: column;
+42  justify-content: center;
+43  align-items: center;
+44  margin: auto;
+45  padding: auto;
+46 }
+47
+48 label {
+49  margin-bottom: 10px;
+50  width: 90%;
+51  font-size: 18px;
+52  padding: 1px;
+53 }
+54
+55 input, select {
+56  width: 90%; 
+57  height: 40px;
+58  border-radius: 5px;  
+59  font-size: 16px;
+60 }
+61
+62 textarea {
+63  width: 90%; 
+64  height: 100px;
+65  border-radius: 5px;  
+66  font-size: 16px;
+67  margin-right: 79px;
+68 }
+69
+70 input[type="radio"], input[type="checkbox"] {
+71  height: 20px;
+72  margin-left: 20px;
+73  width: 10%;
+74 }
+75
+76 .form-checkbox {
+77  margin-right: 436px;
+78  display: inline;
+79  align-items: center; 
+80 }
+81
+82 .form-radio {
+83  margin-right: 200px;
+84  display: inline;
+85  align-items: center;
+86 }
+87
+88 .btn {
+89  margin-bottom: 300px;
+90 }
+91
+92 input[type="submit"] {
+93  width: 90%;
+94  color: brown;
+95  background-color: gray;
+96  border: 1px solid gray;
+97  margin-bottom: 50px;
+98  margin-top: 30px;
+99 }
