@@ -1,0 +1,200 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out this survey</p>
+    <form action="" id="survey-form">
+     <div class="form-div"> 
+       <label id="name-label">Name</label>
+       <input type="text" id="name" name="name" required placeholder="Enter your name here">
+     </div>  
+     <div class="form-div">
+       <label id="email-label">Email</label>
+       <input type="email" id="email" name="email" required placeholder="Enter your email here">
+     </div>  
+      <div class="form-div">
+        <label id="number-label">Age</label>
+        <input type="number" id="number" min="10" max="105" id="age" name="age" required placeholder="Age">
+      </div> 
+      <div class="form-div">
+        <label id="dropdown-role">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown-role">
+          <option value="">Select current role</option>
+          <option value="">Student</option> 
+          <option value="">Full Time Employee</option>
+          <option value="">Part Time Employee</option>
+          <option value="">Unemployed</option>
+          <option value="">Prefer not to say</option>
+        </select>
+      <div>
+      <div class="form-div">  
+      <label id="label-radio">How often do you code?
+      </label>  
+      </div>
+      <div class="form-radio">
+        <label id="frequently"><input type="radio" value="frequently" name="radio1">Frequently</label>
+      </div>
+      <div class="form-radio">
+        <label id="sometimes"><input type="radio" value="sometimes" name="radio1">Sometimes</label>
+      </div>
+      <div class="form-radio">
+        <label id="rarely"><input type="radio" value="rarely" name="radio1">Rarely</label>
+      </div>
+      <div class="form-radio">
+        <label id="never"><input type="radio" value="never" name="radio1">Never</label></div>
+      <div class="form-div">
+        <label id="dropdown-label-coding-uses">How would you use your coding knowledge?</label>
+        <select id="dropdown" name="dropdown-coding-uses">
+          <option value="">To make money</option>
+          <option value="">As a hobby</option> 
+          <option value="">For fun</option>
+          <option value="">To learn more about tech</option>
+          <option value="">I'm not sure yet</option>
+        </select>  
+          </div>
+      <div class="form-div">
+            <label id="checkbox">What areas are of your interest?</label>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="1"><label>Front-end</label></input>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="2"><label>Back-end</label></input>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="3"><label>UX/UI</label></input>            
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="4"><label>Dev Ops</label></input>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="5"><label>Hardware Development</label></input>
+          </div>
+          <div class="div-checkbox">
+            <input type="checkbox" name="interest" value="6"><label>Web 3.0</label></input>
+          </div>
+          <br/>
+          <div class="form-div">
+          <label="label-textarea">Any comments or suggestions?</label>
+            <textarea name="suggestions" placeholder="Enter your comments here..."></textarea>
+          </div>
+          <div class="form-div btn">
+            <input type="submit" id="submit" value="Submit"></input>                        
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: "Tahoma"
+  color: white;
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=pexels-felix-mittermeier-956999.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  color: white;
+  margin: 0;
+}
+
+h1, p {
+  margin: 10px auto 10px auto;
+  display: block;
+
+}
+
+#title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+#description{
+  margin-bottom: 0px;
+  text-align: center;
+  font-style: tahoma;
+}
+
+#survey-form {
+  background-color: rgba(27,27,50, 0.8);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+label {
+  margin-bottom: 10px;
+  width: 90%;
+  font-size: 18px;
+  padding: 1px;
+}
+
+input, select {
+  width: 90%; 
+  height: 40px;
+  border-radius: 5px;  
+  font-size: 16px;
+}
+
+textarea {
+  width: 90%; 
+  height: 100px;
+  border-radius: 5px;  
+  font-size: 16px;
+  margin-right: 79px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  height: 20px;
+  margin-left: 20px;
+  width: 10%;
+}
+
+.form-checkbox {
+  margin-right: 436px;
+  display: inline;
+  align-items: center; 
+}
+
+.form-radio {
+  margin-right: 200px;
+  display: inline;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 300px;
+}
+
+input[type="submit"] {
+  width: 90%;
+  color: brown;
+  background-color: gray;
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+** end of undefined **
+
